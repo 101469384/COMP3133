@@ -1,0 +1,14 @@
+{
+  "name": "lab01-week2",
+  "version": "1.0.0",
+  "description": "COMP3133 Lab01 Week2 - CSV streaming & file output",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
