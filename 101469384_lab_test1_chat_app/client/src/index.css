@@ -1,0 +1,147 @@
+/* Basic clean style (no Tailwind) */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #111;
+}
+
+/* main app container */
+.app-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: 10px;
+    padding: 18px 18px 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* top blue header bar */
+.app-header {
+    background: #2e567a;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* title inside page */
+.page-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 6px 0 10px;
+}
+
+.small {
+    font-size: 13px;
+    color: #333;
+}
+
+/* buttons */
+button {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: 1px solid #1f3f5b;
+    background: #2e567a;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover { filter: brightness(1.07); }
+
+button.secondary {
+    background: #fff;
+    color: #1f3f5b;
+}
+
+/* mode tabs row (Room / Private centered) */
+.modeTabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0 18px;
+}
+
+.modeTabs button {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid #1f3f5b;
+    background: #2e567a;
+    color: #fff;
+}
+
+.modeTabs button.active {
+    filter: brightness(1.12);
+}
+
+/* sections */
+.section {
+    margin-top: 14px;
+}
+
+.section h3 {
+    margin: 0 0 8px;
+}
+
+/* inputs/selects */
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cfd7df;
+    border-radius: 6px;
+    margin: 6px 0 12px;
+}
+
+/* chat area */
+.chatBox {
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fafbfc;
+}
+
+/* message list area (if you have it) */
+.messages {
+    height: 260px;
+    overflow-y: auto;
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.msg {
+    padding: 6px 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    background: #f2f5f8;
+}
+
+.msg.me {
+    background: #e7f0ff;
+    border: 1px solid #cfe0ff;
+}
+
+/* compose row */
+.compose {
+    display: flex;
+    gap: 8px;
+}
+
+.compose input {
+    margin: 0;
+    flex: 1;
+}
+
+.compose button {
+    white-space: nowrap;
+}
+
+
